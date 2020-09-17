@@ -64,8 +64,7 @@ java -Xmx1024m -jar %car_ini%tools\apktool\apktool.jar d -f -k -m "%%x" -o "%car
 if %errorlevel% neq 0 goto err_com
 cd %car_ini%
 %kolor% white dark_yellow "Adding Stratos 3 support to %%~nx..."
-rem xcopy %car_ini%tools\support\%SUP% "%car_ini%decom\decom\app\%%~nx" /y /h /e /i >nul 2>&1
-xcopy %car_ini%tools\support\%SUP% "%car_ini%decom\decom\app\%%~nx" /y /h /e /i
+xcopy %car_ini%tools\support\%SUP% "%car_ini%decom\decom\app\%%~nx" /y /h /e /i >nul 2>&1
 )
 )
 cd %car_ini%
