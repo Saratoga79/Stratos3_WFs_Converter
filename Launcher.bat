@@ -24,6 +24,8 @@ if %OS%==64BIT set vOS=x64
 %car_ini%tools\svn\%vOS%\svn checkout https://github.com/Saratoga79/Stratos3_WFs_Converter/branches/Stratos3_WFs_Converter %car_ini%
 %kolor% white dark_yellow "Updating if needed..."
 %car_ini%tools\svn\%vOS%\svn update %car_ini%
+pause
+exit
 %kolor% white dark_yellow "Launching Converter Tool..."
 start /wait /max Stratos3_WFs_Converter.bat
 exit
