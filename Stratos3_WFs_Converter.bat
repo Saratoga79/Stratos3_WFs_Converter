@@ -127,8 +127,8 @@ for /d %%x in (*) do (
 )
 )
 cd %car_ini%
-::%kolor% white dark_yellow Rebooting..."
-::%car_ini%tools\adb.exe -d reboot
+%kolor% white dark_yellow Rebooting..."
+%car_ini%tools\adb.exe -d reboot
 %car_ini%tools\adb.exe -d wait-for-device >nul 2>&1
 %car_ini%tools\adb.exe -d kill-server >nul 2>&1
 goto finish
