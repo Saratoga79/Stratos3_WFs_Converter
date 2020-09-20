@@ -9,6 +9,7 @@ if not defined in_subprocess (cmd /k set in_subprocess=y ^& %0 %*) & exit )
 pushd "%~dp0"
 set ver=v0.3
 set SUP=4.0.19.5
+pause
 set car_ini=%~dp0
 set kolor=%car_ini%tools\cecho.exe
 %kolor% white dark_blue "***************************************************"
